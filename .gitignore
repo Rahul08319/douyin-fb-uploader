@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Editor & IDE settings
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log and debug
+*.log
+*.bak
+
+# Output folders
+downloads/
+*.mp4
+*.json
+
+# Playwright browser cache
+.playwright/
+
+# Python package/build files
+dist/
+build/
+*.egg-info/
+
+# Flask cache
+instance/
+.webassets-cache/
