@@ -1,0 +1,20 @@
+<!-- Simplified structure -->
+<input placeholder="Douyin Username or Topic" id="douyinInput" />
+<input placeholder="Facebook Access Token" id="fbToken" />
+<button onclick="submit()">Download & Upload</button>
+
+<script>
+  async function submit() {
+    const username = document.getElementById('douyinInput').value;
+    const fbToken = document.getElementById('fbToken').value;
+
+    const response = await fetch("/api/scrape-and-upload", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username, fbToken })
+    });
+
+    const result = await response.json();
+    alert("Status: " + result.status);
+  }
+</script>
